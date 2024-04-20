@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--/meta-->
+
+    <!--title-->
+    <title>رواق</title>    
+    <!--/title-->
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="210x180" href="images/logo.png" />
+    <!--/favicon-->
+
+    <!--css style-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <!--/css style-->
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">    
+    <!--/font family-->
+
+</head>
+<body dir="rtl">
+  <header class="bg-primary py-1">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="text-end">
+                  <a class="navbar-brand" href="#">
+                    <img src="../assets/img/logo.png" alt="logo" height="50">
+                  </a>                        
+                  <h6 class="navbar-brand mb-2 fs-6 fw-blod"> لوحة تحكم برنامج انتظار الخدمات</h6>
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav fs-6">
+                  <li class="nav-item">
+                    <a class="nav-link px-3 active" aria-current="page" href="index.html">الرئيسية </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      الفروع
+                    </a>
+                    <ul class="dropdown-menu text-end" style="right: 0;" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="add_section.html">إضافة فرع جديد</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="all_section.html">عرض كافة الفروع</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      نماذج الخدمات
+                    </a>
+                    <ul class="dropdown-menu text-end" style="right: 0;" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="add_form.html">إضافة خدمة</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="all_form.html">عرض كافة الخدمات</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     طلبات الانتظار <span class="badge bg-danger">20</span>
+                    </a>
+                    <ul class="dropdown-menu text-end" style="right: 0;" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="all_order.html">كافة الطلبات</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="new_order.html">طلبات جديدة</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="review_order.html">طلبات قيد المراجعة</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="expired_order.html">طلبات منتهية</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      المستخدمين
+                    </a>
+                    <ul class="dropdown-menu text-end" style="right: 0;" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="add_user.html">إضافة مستخدم</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="all_user.html">عرض المستخدمين</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      المشتركين
+                    </a>
+                    <ul class="dropdown-menu text-end" style="right: 0;" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="add_account.html">إضافة مشترك</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="all_account.html">عرض المشتركين</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4" href="sign_out.html">خروج</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section>
+      <div class="container">
+          <div class="row">
+              <div class="card mt-4">
+                  <div class="card-header text-center border-0 bg-transparent">
+                      <h5 class="card-title text-primary my-3 fs-2"> كافة الطلبات </h5>
+                  </div>
+                  <div class="card-body">
+                      <table class="table table-hover">
+                          <thead class="text-info">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">كود الطلب</th>
+                              <th scope="col">مقدم الطلب</th>
+                              <th scope="col">الفرع</th>
+                              <th scope="col">الخدمة</th>
+                              <th scope="col">التاريخ والوقت</th>
+                              <th scope="col">الحالة</th>
+                              <th scope="col">المزيد</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-primary">
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>4511</td>
+                              <td>فهد الحربي</td>
+                              <td>الفرع</td>
+                              <td>الخدمة</td>
+                              <td>5:00pm 05/03/2023</td>
+                              <td><a class="text-success">جديد</a></td>
+                              <td><a href="#"><i class="bi bi-box-arrow-down-left text-info fs-5"></i></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>4511</td>
+                              <td>فهد الحربي</td>
+                              <td>الفرع</td>
+                              <td>الخدمة</td>
+                              <td>5:00pm 05/03/2023</td>
+                              <td><a class="text-warning">قيد المراجعة</a></td>
+                              <td><a href="#"><i class="bi bi-box-arrow-down-left text-info fs-5"></i></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>4511</td>
+                              <td>فهد الحربي</td>
+                              <td>الفرع</td>
+                              <td>الخدمة</td>
+                              <td>5:00pm 05/03/2023</td>
+                              <td><a class="text-danger">منتهي</a></td>
+                              <td><a href="#"><i class="bi bi-box-arrow-down-left text-info fs-5"></i></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item page-next disabled">
+                              <a class="page-link rounded-0" href="javascript:void(0)" tabindex="-1">السابق</a>
+                          </li>
+                          <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                          <li class="page-item bg-info"><a class="page-link" href="javascript:void(0)">2</a></li>
+                          <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                          <li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
+                          <li class="page-item"><a class="page-link" href="javascript:void(0)">5</a></li>
+                          <li class="page-item page-prev">
+                              <a class="page-link rounded-0" href="javascript:void(0)">التالي</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-center">
+                  <h3 class="text-primary mt-4 fs-6">جميع الحقوق محفوظة <a class="text-info" href="https://www.t-creartivitysa.com">الإبداع التقني</a> 2023م</h3>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+</body>
+</html>
